@@ -1,0 +1,77 @@
+<html>
+<head>
+<script>
+function compare(){
+	
+	var a, b, c, n, z;
+	a=parseInt(document.getElementById("t1").value);
+	n=a%10;
+	
+	b=(a/10)%10;
+	
+	c=a/100;
+
+	switch(n){
+        case 1 : z="one"; break;
+        case 2 : z="two"; break;
+        case 3 : z="three"; break;
+        case 4 : z="four"; break;
+        case 5 : z="Five"; break;
+        case 6 : z="Six"; break;
+        case 7 : z="Seven"; break;
+        case 8 : z="Eight"; break;
+        case 9 : z="Nine"; break;
+	}
+	switch(b){
+        case 1 : y="one"; break;
+        case 2 : y="two"; break;
+        case 3 : y="three"; break;
+        case 4 : y="four"; break;
+        case 5 : y="Five"; break;
+        case 6 : y="Six"; break;
+        case 7 : y="Seven"; break;
+        case 8 : y="Eight"; break;
+        case 9 : y="Nine"; break;
+	}
+	switch(c){
+        case 1 : k="one"; break;
+        case 2 : k="two"; break;
+        case 3 : k="three"; break;
+        case 4 : k="four"; break;
+        case 5 : k="Five"; break;
+        case 6 : k="Six"; break;
+        case 7 : k="Seven"; break;
+        case 8 : k="Eight"; break;
+        case 9 : k="Nine"; break;
+	}
+	document.getElementById("t2").value =z;
+	document.getElementById("t6").value =y;
+	document.getElementById("t5").value =k;
+}
+	
+	</script>
+</head>
+<center>
+<body>
+<table border="1">
+
+	<tr>
+		<td>Enter the number
+		<td><input id="t1">
+		
+	<tr>
+		<td colspan=2 align ="center"><button onclick="compare()">check </button>
+	<tr>
+		<td>first digit in word is
+		<td><input id="t2">
+	<tr>
+		<td>second digit in word is
+		<td><input id="t6">
+	<tr>
+		<td>third digit in word is
+		<td><input id="t5">
+		
+	
+</table>
+</body>
+</html>

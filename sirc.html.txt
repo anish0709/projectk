@@ -1,0 +1,6 @@
+<center>
+	<table border ="1">
+		<tr>
+			<td colspan = "2"<h1>student registration form</h1>
+		<tr>
+			<

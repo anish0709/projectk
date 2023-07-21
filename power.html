@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<script lang="javascript">
+function pow()
+{
+  a=document.getElementById("t1").value;
+  b=document.getElementById("t2").value;
+  f=Math.pow(a,b);
+  document.getElementById("t3").value=f;
+}
+
+</script>
+</head>
+<body>
+<table border="1">
+<tr>
+    <td>Enter The BAse Number</td>
+    <td><input type="text" id="t1"></td>
+    </tr>
+<tr>
+    <td>Enter The power</td>
+    <td><input type="text" id="t2"></td>
+    </tr>
+<tr>
+    <td colspan="2" align="center"><input type="button" value="result" onclick="pow()"></td>
+</tr>
+<tr>
+    <td colspan="1"><input type="text" id="t3" style="width:100%";></td>
+</tr>
+</body>
+</html>

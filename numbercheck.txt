@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function numbercheck()
+{
+  n=document.getElementById("t1").value;
+  document.write("<a href='numbercheck.html'>Back</a>");
+   if(n.length>10)
+   y=document.getElementById("t2").value;
+   else if(n.length<10)
+   y=document.getElementById("t2").value;
+   else{
+   y=document.getElementById("t2").value;
+   }
+}
+</script>
+</head>
+<body>
+<table align=center>
+<tr>
+<td textarea colspan = "6" rowspan = "6" input type ="t1">
+	<td>Enter your number;
+	<input id="t1">
+<tr>
+	<td><center><button onclick="numbercheck()">Check</button>
+</center>
+</body>
+</html>

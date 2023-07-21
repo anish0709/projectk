@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function markstotal()
+{
+  itemname = parseInt(document.getElementById("itemname").value);
+  quantity = parseInt(document.getElementById("quantity").value);
+  price= parseInt(document.getElementById("price").value);
+  dis= parseInt(document.getElementById("dis").value);
+  dis11 = parseInt(document.getElementById("dis1").value);
+  paid= parseInt(document.getElementById("paid").value);
+  grossamount =quantity*price;
+  profit=dis*grossamount;
+  profit5=grossamount-profit;
+  total=dis1*profit5;
+  totalamount=profit5-total;
+  net=paid-totalamount;
+  document.getElementById("answer").value = grossamount;
+  document.getElementById("answer1").value = profit;
+  document.getElementById("answer2").value = profit5;
+  document.getElementById("answer5").value = total;
+  document.getElementById("answer6").value = totalamount;
+  document.getElementById("answer15").value = net;
+}
+</script>
+</head>
+<center><body>
+<table border="1" >
+
+	<tr>
+		<td>Enter the item name
+		<td><input id="itemname">
+	<tr>
+		<td>Enter the quantity
+		<td><input id="quantity">
+	<tr>
+		<td>Enter the price:
+		<td><input id="price">
+	<tr>
+		<td>Enter the discount 1:
+		<td><input id="dis">
+	<tr>
+		<td>Enter the discount 2:
+		<td><input id="dis1">
+	<tr>
+		<td>Enter the paid amount:
+		<td><input id="paid">
+		
+	<tr>
+	<td colspan=2 align ="center"><button onclick="markstotal()">Total </button>
+	
+	<tr>
+	<td>gross amount
+	<td><input id="answer">
+	<tr>
+	<td>discount
+	<td><input id="answer1">
+	<tr>
+	<td>total
+	<td><input id="answer2">
+	<tr>
+	<td>discount 1
+	<td><input id="answer5">
+	<tr>
+	<td>total amount
+	<td><input id="answer6">
+	<tr>
+	<td>paid
+	<td><input id="answer15">
+	<tr>
+	<td>net
+	<td><input id="answer1">
+</table>
+</body>
+</html>

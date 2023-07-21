@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function numbercheck()
+{
+   n=document.getElementById("t1").value;
+   if(n==parseInt(document.getElementById("t1").value)){
+   if(n.length>10)
+   document.getElementById("t2").value="your no is greater than 10";
+   else if(n.length<10)
+   document.getElementById("t2").value="your no. is lesser than 10";
+   else{
+   document.getElementById("t2").value=n;
+   }
+ }
+   else
+   document.getElementById("t2").value="your entered words insted of number";
+}
+</script>
+</head>
+<body>
+<table align=center>
+<tr>
+<td textarea colspan = "6" rowspan = "6" input type ="t1">
+	<td>Enter your number;
+	<input id="t1">
+<tr>
+	<td><center><button onclick="numbercheck()">Check</button>
+	<input id="t2">
+</center>
+</body>
+</html>

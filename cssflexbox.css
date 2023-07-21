@@ -1,0 +1,17 @@
+.fontainer{
+    display: flex;
+    border: 2px solid grey;
+    height: 45vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fitem{
+    background-color: aqua;
+    margin: 2px solid black;
+    margin: 12px;
+    width: 122px;
+    height: 122px;
+}

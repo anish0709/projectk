@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function mobilenumbercheck()
+{
+  var numOne;
+  numOne = (document.getElementById("first").value);
+  a=numOne.length;
+  
+  document.write("<center><table border=1 cellpadding=10>");
+  if(a=0)
+  document.write("<tr><td>you have entered no number");
+  else if(a>10)
+  document.write("<tr><td>you have entered a number which have more than 10 digits");
+  else{
+  document.write("<tr><td>your entered number is<td>"+numOne);
+  }
+  document.write("</table>");
+  document.write("<a href='mobilenumbercheck.html'>Back</a>");
+  }
+</script>
+</head>
+<body>
+<table align=center>
+<tr>
+	<td>ENTER YOUR MOBILE NUMBER
+	<input id="first">
+<tr>
+	<td><center><button onclick="mobilenumbercheck()">Check</button>
+</center>
+</body>
+</html>

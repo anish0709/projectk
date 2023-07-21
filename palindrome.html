@@ -1,0 +1,45 @@
+<html>
+<head>
+<script>
+function palindrome1(){
+
+	var c, t=0, y, n;
+	
+	n=parseInt(document.getElementById("t1").value);
+	c=n;
+	
+	while(n>0){
+		y=n%10;
+		t=t*10+y;
+		n=parseInt(n/10);
+	}
+	alert(c);
+	alert(t);
+	if(c==t){
+		document.getElementById("t5").value="palindrome";
+	}
+	else{
+		document.getElementById("t5").value="not found";
+		}
+	}
+
+</script>
+</head>
+<center>
+<body>
+<table border="1">
+
+	<tr>
+		<td>Enter the number
+		<td><input id="t1">
+		
+	<tr>
+		<td colspan=2 align ="center"><button onclick="palindrome1()">check</button>
+		
+	<tr>
+		<td>Your output
+		<td><input id="t5">
+	
+</table>
+</body>
+</html>

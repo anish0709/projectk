@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <style>
+      .navbar {
+        background-color: black;
+        border-radius: 91px;
+      }
+      .navbar ul {
+        overflow: auto;
+      }
+      .navbar li {
+        float: left;
+        list-style: none;
+        margin: 30px 21px;
+      }
+      .navbar li a {
+        padding: 3px 3px;
+        text-decoration: none;
+        color: blue;
+      }
+      .navbar li a:hover{
+        background-color: aqua;
+      }
+      .search{
+        float:right;
+        color:white;
+        padding: 12px, 75px;
+      }
+      .navbar input{
+        border: 2px solid black;
+        border-radius: 14px;
+        padding: 5px 17px;
+        width:555px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">contact us</a></li>
+          <div class="search">
+            <input type="text" name="search" id="search" placeholder="search this website">
+          </div>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
+<!-- jab float karte h to parent class me se overflow ho jata -->

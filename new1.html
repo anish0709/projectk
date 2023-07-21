@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add()
+{
+  var numOne, numTwo, sum, subtract, multiply, divide;
+  numOne = (document.getElementById("first").value);
+  numTwo = (document.getElementById("second").value);
+  sum = numOne + numTwo;
+  document.write("<center><table border=1 cellpadding=10>");
+  
+  document.write("<tr><td>First value is <td>"+numOne);
+  document.write("<tr><td>Second value is <td>"+numTwo);
+  document.write("<tr><td>Addition is <td>"+sum);
+  document.write("</table>");
+  document.write("<a href='new1.html'>Back</a>");
+  }
+</script>
+</head>
+<body>
+<table>
+<tr>Enter the First Number: <input id="first">
+<br>
+<br>
+<tr>Enter the Second Number: <input id="second">
+<br>
+<br>
+<button onclick="add()">Add</button>
+<br>
+<button onclick="subtract()">subtract</button>
+<br>
+<button onclick="multiply()">mutiply</button>
+<br>
+<button onclick="divide()">divide</button>
+<br>
+<br>
+<tr> <input id="answer">
+</body>
+</html>

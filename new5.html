@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function markstotal()
+{
+  var numOne, numTwo, numthree, numfour, numfifth, markstotal, markspercentage;
+  numOne =(document.getElementById("first").value);
+  numTwo = (document.getElementById("second").value);
+  numthree =(document.getElementById("third").value);
+  numfour =(document.getElementById("fourth").value);
+  numfifth = (document.getElementById("fifth").value);
+  markstotal = numOne + numTwo + numthree + numfour + numfifth;
+  document.getElementById("answer").value = markstotal;
+  markspercentage = markstotal/5;
+  document.getElementById("answer1").value = markspercentage;
+}
+</script>
+</head>
+<center><body>
+<table border="1" >
+
+	<tr>
+		<td>Enter the marks of first sub
+		<td><input id="first">
+	<tr>
+		<td>Enter the marks of Second sub
+		<td><input id="second">
+	<tr>
+		<td>Enter the marks of third sub:
+		<td><input id="third">
+	<tr>
+		<td>Enter the marks of fourth sub:
+		<td><input id="fourth">
+	<tr>
+		<td>Enter the marks of fifth sub:
+		<td><input id="fifth">
+	<tr>
+	<td colspan=2 align ="center"><button onclick="markstotal()">Total</button>
+	
+	<tr>
+	<td>total marks
+	<td><input id="answer">
+	<tr>
+	<td>total percentage
+	<td><input id="answer1">
+</table>
+</body>
+</html>

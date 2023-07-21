@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>light on and off</title>
+    <style>
+      body {
+        background-color: black;
+      }
+    </style>
+    <script>
+      function onoff() {
+        var img1 = document.getElementById("light");
+        if (img1.src.match("lightoff")) 
+        {
+            img1.src="lighton.jpeg";
+            document.getElementById("onoffbtn").value="off";
+        }
+        else
+        {
+            img1.src="lightoff.jpeg";
+            document.getElementById("onoffbtn").value="on";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <div class="img" id="bulb">
+        <div>
+          <img src="./lightoff.jpeg" id="light" />
+        </div>
+        <div>
+          <input type="button" id="onoffbtn" value="on" onclick="onoff()" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

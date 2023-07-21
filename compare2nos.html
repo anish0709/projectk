@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function compare(){
+	var first, second;
+	first= parseInt(document.getElementById("first").value);
+	second= parseInt(document.getElementById("second").value);
+	
+	if(first>second)
+		document.getElementById("answer").value = first;
+	else
+		document.getElementById("answer").value = second;
+	}
+	</script>
+</head>
+<center>
+<body>
+<table border="1">
+
+	<tr>
+		<td>Enter the first value
+		<td><input id="first">
+	<tr>
+		<td>Enter the second value
+		<td><input id="second">
+		<tr>
+		<td colspan=2 align ="center"><button onclick="compare()">compare </button>
+	<tr>
+		<td>greater is 
+		<td><input id="answer">
+		
+	
+</table>
+</body>
+</html>

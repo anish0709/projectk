@@ -1,0 +1,13 @@
+body{
+    background-color:aqua;
+}
+div{
+    background-image: linear-gradient(blue, red);
+    background-color:pink;
+  
+}
+img{
+    width: 120px;
+    height: 100px;
+    margin-top: 60px;
+}

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> comparision 2        </title>
+<script lang ="javascript">
+function gr()
+{
+             a=parseFloat(document.getElementById("t1").value);
+			 b=parseFloat(document.getElementById("t2").value);
+			 
+			 if(a>b)
+			 {
+	         document.getElementById("t3").value=a;
+			 }
+			 else
+			 {
+	         document.getElementById("t3").value=b;
+			 }
+}
+</script>
+</head>
+<body>
+<table border=2 cellpadding=15 cellspacing=2 align=center>
+<tr>
+	<tr>
+  <td>Enter the second value
+    <td><input type="text" id="t2" >
+	<tr>
+  <td>the greater value is 
+    <td><input type="text" id="t3" >
+	
+	<tr>
+  <td align=center colspan=2><input type=button value="greater" onclick="gr()">
+	 
+	
+	</table>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drop-down menu design -easy tutorials</title>
+    <link rel="stylesheet" href
+    =https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-image: url(./RWg5f1.png);
+        background-size: 2000px 2000px;
+        background-position: center;
+        font-family: sans-serif;
+        background-repeat: no-repeat;
+      }
+      .menu-bar {
+        background: rgb(0, 100, 0);
+        text-align: center;
+      }
+      .menu-bar ul {
+        display: inline-flex;
+        list-style: none;
+        color: #fff;
+      }
+      .menu-bar ul li {
+        margin: 15px;
+        padding: 15px;
+        width: 120px;
+      }
+      .menu-bar ul li a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .active,
+      .menu-bar ul li:hover {
+        background: #2bab0d;
+        border-radius: 3px;
+      }
+      .menu-bar .fa {
+        margin-right: 8px;
+      }
+      .sub-menu-1 {
+        display: none;
+      }
+      .menu-bar ul li:hover .sub-menu-1 {
+        display: block;
+        position: absolute;
+        background: rgb(0, 100, 0);
+        margin-top: 15px;
+        margin-left: -15px;
+      }
+      .menu-bar ul li:hover .sub-menu-1 ul {
+        display: block;
+        margin: 10px;
+      }
+      .menu-bar ul li:hover .sub-menu-1 ul li {
+        width: 150 px;
+        padding: 10px;
+        border-bottom: transparent;
+        border-radius: 0;
+        text-align: left;
+      }
+      .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+        border-bottom: none;
+      }
+      .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+        color: blue;
+      }
+      .box{
+        width: 400px;
+        height: 400px;
+        margin: 0 auto; 
+        background-color: #2bab0d;
+        margin-top : 120px;
+        padding: 15px;
+        border-radius: 15px;
+      }
+      .box h1{
+        width: 400px;
+        height: 400px;
+        background-image: conic-gradient(from -30deg,red 0deg, blue 90deg, blue 180deg green 180deg, green 270deg,  yellow 270deg, yellow 360deg);
+      }
+      h1{
+        margin-top: 115px;
+      }
+
+      #username{
+          font-size: 15px;
+          padding-left: 15px;
+          border-radius: 5px;
+          left: 15%;
+          position: absolute;
+      }
+      #password{
+        font-size: 15px;
+        left: 15% ;
+        height: 15%;
+        position: absolute;
+        top: 5%;
+      }
+      .abc1{
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+        left: 5%;
+        position: absolute;
+        top: 5%;
+
+      }
+      .abc2{
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5%;
+        left: 5%;
+        position: absolute;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <ul>
+        <li class="active">
+          <a href="#"><i class="fa fa-home"></i>home</a>
+        </li>
+        <li>
+          <a href="#">aboutus</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">mission</a></li>
+              <li><a href="#">vision</a></li>
+              <li><a href="#">team</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">services</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">web designing</a></li>
+              <li><a href="#">marketing</a></li>
+              <li><a href="#">mobile app</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">clients</a></li>
+        <li><a href="#">investors</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h1>
+        <div align="center">
+          <div id="username">
+          USERNAME
+          </div>
+          <div>
+          <input type="text" placeholder="user_name" class="abc1"> 
+          </div>
+          <br>
+          <div id="password">
+          PASSWORD
+          </div>
+          <div>
+          <input type="text" placeholder="password" class="abc2">
+          </div>     
+      </h1>
+    </div>
+  </body>
+  <script>
+    var demail="abc@xyz.com"
+    var email=document.getElementById("")
+  </script>
+</html>
